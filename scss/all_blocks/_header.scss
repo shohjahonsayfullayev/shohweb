@@ -1,0 +1,154 @@
+.header{
+    margin-top: 25px;
+    position: relative;
+    // background-color: rgba(107, 113, 112, 0);
+}
+.header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list{
+    display: flex;
+
+}
+
+.header__list li{
+    margin-left: 23px;
+}
+
+.header_link{
+    color: black;
+    font-size: 25px;
+}
+
+.header_link:hover{
+    border: 2px solid black;
+    transition: all 0.3s;
+    color: blue;
+}
+
+.header_link:active{
+    background-color: rgb(18, 88, 18);
+    color: beige;
+    border-color: maroon;
+    transition: all 0.5s;
+}
+.burger_header{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 717px) {
+    .header__list {
+      background-color: lightblue;
+      position: fixed;
+      z-index: 50;
+      display: block;
+      top: 0;
+    //   left: 355px;
+      left: 706px;
+      width: 50%;
+      height: 100vh;
+      padding-top: 65px;
+      background-color: rgb(48, 46, 46);
+    }
+    .header__list-btn{
+        left: 355px;
+        transition: all 0.5s;
+    }
+
+    .header__item{
+        margin-bottom: 25px;
+    }
+
+    .header_link{
+        color: beige;
+    }
+
+    .header_link:hover{
+        color: aqua;
+        border-radius: none;
+        border-bottom: 2px solid red;
+    }
+
+    .header_link:hover{
+        color: aqua;
+        border-radius: none;
+        border-bottom: 2px solid rgb(161, 217, 20);
+
+    }
+
+    .burger_header{
+        display: block;
+    }
+
+  }
+
+  .header_btn{
+    border: none;
+  }
+
+  .header_btn-x{
+
+    border: none;
+    display: none;
+    top: 4px;
+    right: 25px;
+    position: absolute;
+    z-index: 22222;
+  }
+
+  .btnx{
+    display: block;
+  }
+
+  @media only screen and (max-width: 517px) {
+    .header__list-btn{
+        left: 262px;
+        transition: all 0.5s;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .header__list-btn{
+        left: 222px;
+        transition: all 0.5s;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .header__list{
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 64vh;
+        padding-top: 88px;
+        // display: flex;
+        // align-items: center;
+
+        // padding-top: -25px;
+    }
+
+    .header{
+        margin-top: 0;
+    }
+
+    .header__hiddin{
+        z-index: 56;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .burger_header{
+        display: none;
+    }
+}
+
+
+

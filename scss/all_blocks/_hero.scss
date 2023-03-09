@@ -1,0 +1,47 @@
+.hero{
+    margin-top: 110px;
+}
+
+.hero__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero__item img{
+    width: 315px;
+}
+
+
+.hero__item p{
+    // width: 465px;
+    margin-left: 15px;
+}
+
+.hero{
+    background-color: rgba(90, 87, 87, 0.205);
+}
+
+@media only screen and (max-width: 611px) {
+    // .hero__item p {
+    //     width: 394px;
+    //     margin-left: 10px;
+    // }
+
+    .hero__list{
+        display: block;
+        text-align: center;
+    }
+
+    .hero__list li{
+        // display: block;
+        margin-bottom: 50px;
+        
+    }
+}
+@media only screen and (max-width: 385px) {
+    .hero{
+        margin-top: 326px;
+    }
+}
